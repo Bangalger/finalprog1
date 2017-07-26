@@ -12,13 +12,35 @@ $(document).ready(function(){
 //PARTICULAS PARA CANVAS 
 //ingrear un input y un enviar o algo por el estilo para seleccionarlo con jquery
 //transformarlo en variable y luego agregarlo dentro de num_particles
-    function drawCanvas(){        
+
+var numerou;
+var numP;   
+
+ $("select").change(function() {
+    var str = "";
+    $("select option:selected").each(function() {
+      str += $(this).text() + " ";
+
+      });
+
+    $("#pimbox").text(str);
+        numerou = $("#pimbox").text();
+        console.log("holis soy" + numerou);
+        numP = parseInt(numerou);
+        console.log(numP);   
+    })
+    .trigger("change");
+ //______________________________________  
+
+    function drawCanvas(){
+   
         var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
         canvas.width = window.innerWidth - 50;
         canvas.height = window.innerHeight;
         var particles = [];
-        var num_particles = 1000;
+        var num_particles = numP;
+        //var num_particles = 1000;
 
        
         function GetRandomColor() {

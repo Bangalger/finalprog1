@@ -246,7 +246,7 @@ canvas{
  	Our Work Section
 ---------------------*/
 
-.оur-work{
+.our-work {
 	background-color: #fff;
 }
 
@@ -388,12 +388,19 @@ canvas{
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-
 	max-width: 800px;
 	width: 80%;
 }
 
 .contact form input{
+	padding: 15px;
+	flex: 1;
+	margin-right: 30px;
+	font-size: 18px;
+	color: #555;
+}
+/**/
+.contact form textarea{
 	padding: 15px;
 	flex: 1;
 	margin-right: 30px;
@@ -414,9 +421,6 @@ canvas{
 	}
 
 }
-
-
-
 
 /*-------------
  	Footer
@@ -492,4 +496,8 @@ button{
 
 .blue{
 	background-color:blue;
+}
+
+.formu{
+	max-width: 18% !important;
 }
