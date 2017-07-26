@@ -10,6 +10,8 @@ $(document).ready(function(){
 	}, 2000);
 
 //PARTICULAS PARA CANVAS 
+//ingrear un input y un enviar o algo por el estilo para seleccionarlo con jquery
+//transformarlo en variable y luego agregarlo dentro de num_particles
     function drawCanvas(){        
         var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
