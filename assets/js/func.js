@@ -68,4 +68,9 @@ $(document).ready(function(){
         loop();
     }
     drawCanvas();
+
+    $("#change").click(function () {
+        $('header, section, footer').toggleClass("blue");
+    });
+
 });

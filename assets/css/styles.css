@@ -475,3 +475,30 @@ footer p a{
 @media (max-width: 1200px) {
 	#bsaHolder{ display:none;}
 }
+
+button{
+	padding: 10px;
+	background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    border: 1px solid white;
+   	margin: 5px;
+   	cursor:pointer;
+   	border-radius: 2px
+}
+
+#btns{
+	display: inline;
+}
+
+
+.white{
+	color: white;
+}
+
+.blue{
+	background-color:blue;
+}
