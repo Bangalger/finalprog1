@@ -335,14 +335,14 @@ canvas{
 
 
 /*--------------------
- 	Reviews Section
+ 	bars Section
 --------------------*/
 
-.reviews{
+.bars{
 	background-color: #fff;
 }
 
-.reviews .quote{
+.bars .quote{
 	text-align: center;
 	width: 80%;
     font-size: 22px;
@@ -352,22 +352,73 @@ canvas{
     padding: 0;
 }
 
-.reviews .author{
+.bars .author{
     font-size: 18px;
     margin-bottom: 50px;
 }
 
-.reviews .author:last-child{
+/**/
+.bars .skills {
+    margin-top: 36px;
+    list-style: none;
+}
+
+.bars li {
+    position: relative;
+    margin-bottom: 60px;
+    background: #ccc;
+    height: 42px;
+    border-radius: 3px;
+}
+
+li {
+    line-height: 18px;
+    margin-bottom: 12px;
+}
+
+.photoshop {
+    width: 60%;
+    -moz-animation: photoshop 2s ease;
+    -webkit-animation: photoshop 2s ease;
+}
+
+.bar-expand {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding-right: 24px;
+    background: #313131;
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 3px 0 0 3px;
+}
+
+.bars li em {
+    font: 15px 'opensans-bold', sans-serif;
+    color: #313131;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    position: relative;
+    top: -36px;
+}
+
+/**/
+
+
+.bars .author:last-child{
     margin-bottom: 0;
 }
 
 @media (max-width: 1000px){
 
-	.reviews .quote{
+	.bars .quote{
 		font-size: 20px;
 	}
 
-	.reviews .author{
+	.bars .author{
 	    font-size: 16px;
 	}
 
