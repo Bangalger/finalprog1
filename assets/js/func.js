@@ -13,34 +13,41 @@ $(document).ready(function(){
 //ingrear un input y un enviar o algo por el estilo para seleccionarlo con jquery
 //transformarlo en variable y luego agregarlo dentro de num_particles
 
-var numerou;
-var numP;   
+    var numero, sizeA = 2, sizeB = 2;   
 
- $("select").change(function() {
-    var str = "";
-    $("select option:selected").each(function() {
-      str += $(this).text() + " ";
+    $("#val-partc").change(function() {
+        var str = "";
+        $("#val-partc option:selected").each(function() {
+            str += $(this).text() + " ";
+            numero = parseInt(str);
+            drawCanvas(numero);
+        });
+ 
+    })
+    .trigger("change");
 
-      });
-
-    $("#pimbox").text(str);
-        numerou = $("#pimbox").text();
-        console.log("holis soy" + numerou);
-        numP = parseInt(numerou);
-        console.log(numP);   
+    $("#size-partc").change(function() {
+        var str = "";
+        $("#size-partc option:selected").each(function() {
+            str += $(this).text() + " ";
+            numeroPart = parseInt(str);
+            sizeA = numeroPart;
+            sizeB = numeroPart;
+            drawCanvas(numero);
+        });
+ 
     })
     .trigger("change");
  //______________________________________  
 
-    function drawCanvas(){
+    function drawCanvas(nume){
    
         var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
         canvas.width = window.innerWidth - 50;
         canvas.height = window.innerHeight;
         var particles = [];
-        var num_particles = numP;
-        //var num_particles = 1000;
+        var num_particles = nume;
 
        
         function GetRandomColor() {
@@ -65,7 +72,7 @@ var numP;
        
         Particle.prototype.Draw = function (ctx) {
             ctx.fillStyle = this.Color;
-            ctx.fillRect(this.x, this.y, 2, 2);
+            ctx.fillRect(this.x, this.y, sizeA, sizeB);
         }
         Particle.prototype.Update = function () {
             this.x += this.vx;
@@ -91,10 +98,21 @@ var numP;
             particles.push(new Particle());
         loop();
     }
-    drawCanvas();
 
     $("#change").click(function () {
         $('header, section, footer').toggleClass("blue");
     });
+
+
+    
+    $('.cat-btn').on('click', function(e){
+        e.preventDefault();
+        $('.mod-1').addClass('active');
+
+        var attr = $(this).attr('href');
+
+        $('.mod').removeClass('active');
+        $('.'+attr).addClass('active');
+    })
 
 });
