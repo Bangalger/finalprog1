@@ -156,5 +156,10 @@ $(document).ready(function(){
         $('#det-3').removeClass("circ-activ-lab");
     });
 
+    var div = $('#a-crd');
+    setInterval(function(){
+    var pos = div.scrollTop();
+    div.scrollTop(pos + 2);
+    }, 200)
 
 });
