@@ -38,6 +38,15 @@ a.btn{
 	text-align: center;
 }
 
+input.btn{
+	color: white;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #2196F3;
+	font-weight: 800;
+	text-align: center;
+}
+
 hr{
 	width: 150px;
 	height: 2px;
@@ -79,11 +88,12 @@ section h3.title{
 }
 
 section p{
-	max-width: 800px;
+	margin-top: 48px;
+	/* max-width: 800px; */
 	text-align: center;
-	margin-bottom: 35px;
-	padding: 0 20px;
-	line-height: 2;
+	/* margin-bottom: 35px; */
+	/* padding: 0 20px; */
+	/* line-height: 2; */
 }
 
 ul.grid{
@@ -363,11 +373,15 @@ canvas{
     list-style: none;
 }
 
+#pimbx{
+	margin-top: 20px;
+}
+
 .bars li {
     position: relative;
     margin-bottom: 60px;
     background: #ccc;
-    height: 42px;
+    height: 20px;
     border-radius: 3px;
 }
 
@@ -377,7 +391,39 @@ li {
 }
 
 .photoshop {
+    width: 50%;
+    -moz-animation: photoshop 2s ease;
+    -webkit-animation: photoshop 2s ease;
+}
+
+.illustrator {
+    width: 100%;
+    -moz-animation: photoshop 2s ease;
+    -webkit-animation: photoshop 2s ease;
+}
+
+.html5 {
+    width: 70%;
+    -moz-animation: photoshop 2s ease;
+    -webkit-animation: photoshop 2s ease;
+}
+
+.css {
+    width: 150%;
+    margin-top: 9px !important;
+    margin-left: 19px !important;
+    -moz-animation: photoshop 2s ease;
+    -webkit-animation: photoshop 2s ease;
+}
+
+.jquery {
     width: 60%;
+    -moz-animation: photoshop 2s ease;
+    -webkit-animation: photoshop 2s ease;
+}
+
+.ableton {
+    width: 100%;
     -moz-animation: photoshop 2s ease;
     -webkit-animation: photoshop 2s ease;
 }
@@ -390,7 +436,7 @@ li {
     padding-right: 24px;
     background: #313131;
     display: inline-block;
-    height: 42px;
+    height: 20px;
     line-height: 42px;
     border-radius: 3px 0 0 3px;
 }
@@ -449,9 +495,8 @@ li {
 	flex: 1;
 	margin-bottom: 16px;
 	font-size: 18px;
-	color: #555;
+	color: white;
 	width: 80%;
-
 }
 /**/
 .contact form textarea{
@@ -579,10 +624,96 @@ button{
 .active{
 	display: block;
 }
-/*cambiar para cv*/
-ul.grid {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+
+#estudios1, #estudios2, #estudios3{
+	font: 15px 'opensans-bold', sans-serif;
+	letter-spacing: 2px;	
+    border: 1px solid #eee;
+    border-radius: 85%;
+    text-align: center;
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    background-color: #2fe4ea;
+    margin-bottom: 20px;
+}
+
+#trabajo1, #trabajo2, #trabajo3{
+	font: 15px 'opensans-bold', sans-serif;
+	letter-spacing: 2px;	
+    border: 1px solid #eee;
+    border-radius: 85%;
+    text-align: center;
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    background-color: #2fea80;
+    margin-bottom: 20px;
+}
+
+section article h3{
+	margin-top: 44%;	
+}
+
+section article div{
+	display:none;
+}
+section article div span{
+	font-size: 11px;
+	font-style: italic;
+}
+
+.circ-activ{
+	display: block;
+	color:white;
+	margin-top: -88px;
+	border: 1px solid #eee;
+    border-radius: 85%;
+    text-align: center;
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    background-color: #555;
+    font-size: 12px;
+}
+
+.circ-activ-lab{
+	display: block;
+	color:white;
+	margin-top: -88px;
+	border: 1px solid #eee;
+    border-radius: 85%;
+    text-align: center;
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    background-color: #555;
+    font-size: 12px;
+}
+
+#lilinea{
+	height: 51px;
+    margin-bottom: 13px;
+    border-left: 4px solid gray;
+}
+
+#lilinea-1{
+	height: 51px;
+    margin-bottom: 13px;
+    border-left: 4px solid gray;
+}
+#lilinea-2{
+	height: 51px;
+    margin-bottom: 13px;
+    border-left: 4px solid black;
+}
+#lilinea-3{
+	height: 51px;
+    margin-bottom: 13px;
+    border-left: 4px solid gray;
+}
+#lilinea-4{
+	height: 51px;
+    margin-bottom: 13px;
+    border-left: 4px solid gray;
 }

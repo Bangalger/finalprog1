@@ -103,8 +103,6 @@ $(document).ready(function(){
         $('header, section, footer').toggleClass("blue");
     });
 
-
-    
     $('.cat-btn').on('click', function(e){
         e.preventDefault();
         $('.mod-1').addClass('active');
@@ -114,5 +112,49 @@ $(document).ready(function(){
         $('.mod').removeClass('active');
         $('.'+attr).addClass('active');
     })
+
+
+    $("#estudios1").hover(function(){
+        $('#detalle1').addClass("circ-activ");
+       
+        }, function(){
+        $('#detalle1').removeClass("circ-activ");
+    });
+
+     $("#estudios2").hover(function(){
+        $('#detalle2').addClass("circ-activ");
+        
+        }, function(){
+        $('#detalle2').removeClass("circ-activ");
+    });
+
+      $("#estudios3").hover(function(){
+        $('#detalle3').addClass("circ-activ");
+        
+        }, function(){
+        $('#detalle3').removeClass("circ-activ");
+    });
+
+//_______
+    $("#trabajo1").hover(function(){
+        $('#det-1').addClass("circ-activ-lab");
+        
+        }, function(){
+        $('#det-1').removeClass("circ-activ-lab");
+    });
+
+     $("#trabajo2").hover(function(){
+        $('#det-2').addClass("circ-activ-lab");
+        }, function(){
+        $('#det-2').removeClass("circ-activ-lab");
+    });
+
+      $("#trabajo3").hover(function(){
+        $('#det-3').addClass("circ-activ-lab");
+        
+        }, function(){
+        $('#det-3').removeClass("circ-activ-lab");
+    });
+
 
 });
